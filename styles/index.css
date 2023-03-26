@@ -2,10 +2,15 @@ body {
   margin: 0;
   padding: 16px;
   background-color: #FCC9AD;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
   background-color: #FCC9AD;
+  padding: 16px;
   text-align: center;
 }
 header .nav-items {
@@ -13,7 +18,7 @@ header .nav-items {
   display: flex;
   justify-content: space-around;
   margin-bottom: 24px;
-  font-size: 25px;
+  font-size: 18px;
 }
 header .nav-items a {
   text-decoration: none;
@@ -23,4 +28,18 @@ header .nav-items .nav-lines {
   background-color: #FB6131;
   height: 25px;
   width: 1.5px;
+}
+
+footer {
+  background-color: #FCC9AD;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-media a i {
+  color: #FB6131;
+  font-size: 24px;
 }/*# sourceMappingURL=index.css.map */

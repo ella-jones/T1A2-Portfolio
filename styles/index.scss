@@ -1,29 +1,58 @@
+$primary-color: #FB6131;
+$secondary-color: #FCC9AD;
+
+@mixin background-stuff() {
+    background-color: $secondary-color;
+    padding: 16px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 16px;
-    background-color: #FCC9AD;
+    background-color: $secondary-color;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-    background-color: #FCC9AD;
-    text-align: center;
+    @include background-stuff();
 
     .nav-items {
         width: 100%;
         display: flex;
         justify-content: space-around;
         margin-bottom: 24px;
-        font-size: 25px;
+        font-size: 18px;
 
         a {
             text-decoration: none;
-            color: #FB6131;
+            color: $primary-color;
         }
 
         .nav-lines {
-            background-color: #FB6131;
+            background-color: $primary-color;
             height: 25px;
             width: 1.5px;
         }
     }
+}
+
+footer {
+   @include background-stuff();
+
+   .social-media {
+    display: flex;
+    justify-content: space-around;
+
+    a{
+        i{
+            color: $primary-color;
+            font-size: 24px;
+        }
+    }
+   }
 }
