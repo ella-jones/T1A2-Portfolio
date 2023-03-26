@@ -1,0 +1,66 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h2 {
+  color: rgb(19, 19, 19);
+}
+main form {
+  background-color: #FB6131;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+main form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+main form .form-elements label {
+  font-size: 1.2rem;
+  color: white;
+}
+main form .form-elements .form-input {
+  border: 1px solid #FCC9AD;
+  border-radius: 4px;
+  outline: none;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+main form .form-elements .form-input:not(.form-textarea) {
+  height: 25px;
+}
+main form .form-elements .form-input.form-textarea {
+  resize: none;
+}
+main form .form-elements .form-input:focus {
+  box-shadow: 0 0 8px 3px #c23d14;
+}
+main form .btn-div {
+  text-align: center;
+}
+main form .btn-div #send {
+  height: 40px;
+  min-width: 120px;
+  background-color: #FCC9AD;
+  color: rgb(19, 19, 19);
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+}
+main form .btn-div #send:hover {
+  cursor: pointer;
+  background-color: #f8b895;
+}
+
+@media screen and (min-width: 600px) {
+  main form .form-elements {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  main form .form-elements .form-input {
+    width: 70%;
+  }
+}/*# sourceMappingURL=contact.css.map */
