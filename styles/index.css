@@ -30,6 +30,23 @@ header .nav-items .nav-lines {
   width: 1.5px;
 }
 
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-title {
+    margin-bottom: 11px;
+  }
+  header .nav-items {
+    width: 50%;
+  }
+}
+main section .ella-image img {
+  height: 300px;
+}
+
 footer {
   background-color: #FCC9AD;
   padding: 16px;
@@ -42,4 +59,12 @@ footer .social-media {
 footer .social-media a i {
   color: #FB6131;
   font-size: 24px;
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }/*# sourceMappingURL=index.css.map */

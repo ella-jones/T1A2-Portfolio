@@ -41,6 +41,33 @@ header {
     }
 }
 
+@media screen and (min-width: 600px) {
+    header {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .logo-title {
+            margin-bottom: 11px;
+        }
+
+        .nav-items {
+            width: 50%;
+
+        }
+    }
+}
+
+main {
+    section {
+        .ella-image {
+            img {
+                height: 300px
+            }
+        }
+    }
+}
+
 footer {
    @include background-stuff();
 
@@ -55,4 +82,14 @@ footer {
         }
     }
    }
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        .social-media {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
