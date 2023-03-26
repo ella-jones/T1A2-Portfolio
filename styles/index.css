@@ -3,6 +3,9 @@ header {
   padding: 16px;
   text-align: center;
 }
+header .logo-title a img {
+  width: 150px;
+}
 header .nav-items {
   width: 100%;
   display: flex;

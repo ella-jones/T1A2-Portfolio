@@ -1,0 +1,18 @@
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main article {
+  background-color: #FB6131;
+  border-radius: 6px;
+  margin: 20px 0px;
+  padding: 16px;
+}
+main article section .blog-1-image {
+  width: 300px;
+  border-radius: 6px;
+}
+main article section h3 {
+  color: white;
+}/*# sourceMappingURL=projects.css.map */

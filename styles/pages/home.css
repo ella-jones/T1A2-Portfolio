@@ -1,1 +1,7 @@
-/*# sourceMappingURL=home.css.map */
+main section .ella-image img {
+  height: 200px;
+  border-radius: 50%;
+}
+main section .intro p {
+  font-size: 30px;
+}/*# sourceMappingURL=home.css.map */

@@ -1,16 +1,21 @@
 main {
-    section {
+    section{
         .ella-image {
             img {
                 height: 200px;
                 border-radius: 50%;
             }
         }
-        
-        .introduction {
-            color: $secondary-color;
+
+        .intro {
+            p {
+                font-size: 30px; 
+            }
+            
         }
     }
 }
+
+
 
 

@@ -5,6 +5,14 @@
 header {
     @include background-stuff();
 
+    .logo-title {
+        a {
+            img {
+                width: 150px;
+            }
+        }
+    }
+
     .nav-items {
         width: 100%;
         display: flex;
