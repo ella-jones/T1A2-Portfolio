@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 16px;
+  background-color: #FCC9AD;
+}
+
+header {
+  background-color: #FCC9AD;
+  text-align: center;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  font-size: 25px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: #FB6131;
+}
+header .nav-items .nav-lines {
+  background-color: #FB6131;
+  height: 25px;
+  width: 1.5px;
+}/*# sourceMappingURL=index.css.map */
