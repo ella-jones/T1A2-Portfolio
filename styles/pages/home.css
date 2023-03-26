@@ -1,3 +1,76 @@
+header {
+  background-color: #FCC9AD;
+  padding: 16px;
+  text-align: center;
+}
+header .logo-title a img {
+  width: 150px;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+header .nav-items a {
+  text-decoration: none;
+  color: #FB6131;
+}
+header .nav-items .nav-lines {
+  background-color: #FB6131;
+  height: 25px;
+  width: 1.3px;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  header .logo-title {
+    margin-bottom: 11px;
+  }
+  header .nav-items {
+    width: 50%;
+  }
+}
+footer {
+  background-color: #FCC9AD;
+  padding: 16px;
+  text-align: center;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+}
+footer .social-media a i {
+  color: #FB6131;
+  font-size: 24px;
+}
+footer p {
+  margin-bottom: 0;
+  color: rgb(19, 19, 19);
+}
+
+@media screen and (min-width: 600px) {
+  footer .social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+body {
+  background-color: #FCC9AD;
+  padding: 16px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 main section .ella-image img {
   height: 200px;
   border-radius: 50%;
