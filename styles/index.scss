@@ -8,10 +8,10 @@ $secondary-color: #FCC9AD;
 }
 
 body {
+    @include background-stuff();
     margin: 0;
-    padding: 16px;
-    background-color: $secondary-color;
     min-height: 100vh;
+    
 
     display: flex;
     flex-direction: column;
@@ -62,7 +62,8 @@ main {
     section {
         .ella-image {
             img {
-                height: 300px
+                height: 200px;
+                border-radius: 50%;
             }
         }
     }
@@ -81,6 +82,10 @@ footer {
             font-size: 24px;
         }
     }
+   }
+
+   p {
+    margin-bottom: 0;
    }
 }
 

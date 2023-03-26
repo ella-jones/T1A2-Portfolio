@@ -1,7 +1,8 @@
 body {
-  margin: 0;
-  padding: 16px;
   background-color: #FCC9AD;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -44,7 +45,8 @@ header .nav-items .nav-lines {
   }
 }
 main section .ella-image img {
-  height: 300px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 footer {
@@ -59,6 +61,9 @@ footer .social-media {
 footer .social-media a i {
   color: #FB6131;
   font-size: 24px;
+}
+footer p {
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 600px) {
