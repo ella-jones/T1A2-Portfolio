@@ -1,11 +1,7 @@
-$primary-color: #FB6131;
-$secondary-color: #FCC9AD;
+@import "./defaults/color";
+@import "./components/header";
+@import "./components/footer";
 
-@mixin background-stuff() {
-    background-color: $secondary-color;
-    padding: 16px;
-    text-align: center;
-}
 
 body {
     @include background-stuff();
@@ -18,83 +14,5 @@ body {
     justify-content: space-between;
 }
 
-header {
-    @include background-stuff();
 
-    .nav-items {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 24px;
-        font-size: 18px;
 
-        a {
-            text-decoration: none;
-            color: $primary-color;
-        }
-
-        .nav-lines {
-            background-color: $primary-color;
-            height: 25px;
-            width: 1.5px;
-        }
-    }
-}
-
-@media screen and (min-width: 600px) {
-    header {
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        .logo-title {
-            margin-bottom: 11px;
-        }
-
-        .nav-items {
-            width: 50%;
-
-        }
-    }
-}
-
-main {
-    section {
-        .ella-image {
-            img {
-                height: 200px;
-                border-radius: 50%;
-            }
-        }
-    }
-}
-
-footer {
-   @include background-stuff();
-
-   .social-media {
-    display: flex;
-    justify-content: space-around;
-
-    a{
-        i{
-            color: $primary-color;
-            font-size: 24px;
-        }
-    }
-   }
-
-   p {
-    margin-bottom: 0;
-   }
-}
-
-@media screen and (min-width: 600px) {
-    footer {
-        .social-media {
-            width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
-}

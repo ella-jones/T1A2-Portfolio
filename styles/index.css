@@ -1,14 +1,3 @@
-body {
-  background-color: #FCC9AD;
-  padding: 16px;
-  text-align: center;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 header {
   background-color: #FCC9AD;
   padding: 16px;
@@ -28,7 +17,7 @@ header .nav-items a {
 header .nav-items .nav-lines {
   background-color: #FB6131;
   height: 25px;
-  width: 1.5px;
+  width: 1.3px;
 }
 
 @media screen and (min-width: 600px) {
@@ -44,11 +33,6 @@ header .nav-items .nav-lines {
     width: 50%;
   }
 }
-main section .ella-image img {
-  height: 200px;
-  border-radius: 50%;
-}
-
 footer {
   background-color: #FCC9AD;
   padding: 16px;
@@ -64,6 +48,7 @@ footer .social-media a i {
 }
 footer p {
   margin-bottom: 0;
+  color: rgb(19, 19, 19);
 }
 
 @media screen and (min-width: 600px) {
@@ -72,4 +57,14 @@ footer p {
     margin-left: auto;
     margin-right: auto;
   }
+}
+body {
+  background-color: #FCC9AD;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=index.css.map */
