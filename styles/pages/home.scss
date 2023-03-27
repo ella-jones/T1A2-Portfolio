@@ -1,19 +1,112 @@
 @import "../index";
+@import "../defaults/breakpoint";
 
 main {
+
     section{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         .ella-image {
             img {
+                border: 10px solid $primary-color;
                 height: 200px;
                 border-radius: 50%;
             }
         }
 
         .intro {
+            text-align: center;
+
             p {
                 font-size: 30px; 
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                margin: 0;
+                
             }
-            
+
+            .hi-text {
+                font-size: 30px; 
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+            }
+
+            .ella-name {
+                font-size: 50px; 
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                color: $primary-color;
+            }            
+
+            .btn-div {
+
+                #learn-more-btn {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    height: 35px;
+                    min-width: 115px;
+                    background-color: $primary-color;
+                    color: $third-color;
+                    border: none;
+                    outline: none;
+                    border-radius: 3px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #fea473;
+                    }
+                }
+
+                
+
+                margin: 24px 0 20px 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $medium) {
+    main {
+        section{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+
+            .ella-image {
+                img {
+                    height: 275px;
+                }
+                    
+                
+            }
+
+            .intro {
+                text-align: justify;
+
+                p {
+                    font-size: 40px;
+                }
+
+                .hi-text {
+                    font-size: 40px;
+                }
+
+                .ella-name {
+                    font-size: 60px;
+                }
+
+                .btn-div {
+                    #learn-more-btn {
+                        font-size: 18px;
+                        height: 40px;
+                        min-width: 120px;
+                    }
+                }
+            }
+
         }
     }
 }

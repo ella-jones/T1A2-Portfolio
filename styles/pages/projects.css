@@ -12,6 +12,8 @@ header .nav-items {
   justify-content: space-around;
   margin-bottom: 24px;
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 header .nav-items a {
   text-decoration: none;
@@ -52,6 +54,8 @@ footer .social-media a i {
 footer p {
   margin-bottom: 0;
   color: rgb(19, 19, 19);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 600px) {
