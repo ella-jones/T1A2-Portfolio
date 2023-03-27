@@ -108,10 +108,16 @@ main section .intro .ella-name {
   font-weight: 600;
   color: #FB6131;
 }
+main section .intro .ella-name:hover {
+  color: #fea473;
+}
+main section .intro a {
+  text-decoration: none;
+}
 main section .intro .btn-div {
   margin: 24px 0 20px 0;
 }
-main section .intro .btn-div #learn-more-btn {
+main section .intro .btn-div #my-work-btn {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   height: 35px;
@@ -122,7 +128,7 @@ main section .intro .btn-div #learn-more-btn {
   outline: none;
   border-radius: 3px;
 }
-main section .intro .btn-div #learn-more-btn:hover {
+main section .intro .btn-div #my-work-btn:hover {
   cursor: pointer;
   background-color: #fea473;
 }
@@ -148,7 +154,7 @@ main section .intro .btn-div #learn-more-btn:hover {
   main section .intro .ella-name {
     font-size: 60px;
   }
-  main section .intro .btn-div #learn-more-btn {
+  main section .intro .btn-div #my-work-btn {
     font-size: 18px;
     height: 40px;
     min-width: 120px;

@@ -25,18 +25,35 @@ main {
         grid-column: 2 / 3;
         grid-row: 2 / -1;
         box-shadow: 0 0 5px 1px rgb(243, 87, 15);
-        text-align: center;
         border-radius: 4px;
-        font-family: 'Poppins', sans-serif;  
+        font-family: 'Poppins', sans-serif; 
+        text-align: center;
+        
+        h3 {
+            text-align: justify;
+        }
 
         .who-am-i{
             margin-bottom: 40px;
+            text-align: left;
         }
         
         .skills {
-            margin-bottom: 30px;
-        }
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: #f9815d;
+            
+            margin: 10px;
+            padding: 20px;
+            font-size: 60px;
 
+            i{
+                &:hover {
+                    font-size: 70px;
+                }
+            }
+        }
 
         #resume {
             height: 40px;
@@ -48,6 +65,7 @@ main {
                 border-radius: 3px;
                 font-size: 1.3rem;
                 font-family: 'Poppins', sans-serif; 
+                
 
 
 
