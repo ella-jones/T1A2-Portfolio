@@ -19,6 +19,9 @@ header .nav-items a {
   text-decoration: none;
   color: #FB6131;
 }
+header .nav-items a:hover {
+  color: #fea473;
+}
 header .nav-items .nav-lines {
   background-color: #FB6131;
   height: 25px;
