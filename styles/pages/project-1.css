@@ -104,26 +104,21 @@ main .description {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-main .description h3 {
-  text-align: justify;
+main .description .blog-1-image {
+  width: 250px;
+  border-radius: 5px;
 }
-main .description .who-am-i {
+main .description .date {
+  margin-top: 0;
+  text-align: justify;
+  color: #e2876b;
+  font-weight: 400;
+}
+main .description .blog-text {
   margin-bottom: 40px;
   text-align: left;
 }
-main .description .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  color: #f9815d;
-  margin: 10px;
-  padding: 20px;
-  font-size: 60px;
-}
-main .description .skills i:hover {
-  font-size: 70px;
-}
-main .description #resume {
+main .description #next-blog {
   height: 40px;
   min-width: 120px;
   background-color: #FB6131;
@@ -134,7 +129,13 @@ main .description #resume {
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
 }
-main .description #resume:hover {
+main .description #next-blog:hover {
   cursor: pointer;
   background-color: #f9815d;
-}/*# sourceMappingURL=about.css.map */
+}
+
+@media screen and (min-width: 600px) {
+  main .description .blog-1-image {
+    width: 500px;
+  }
+}/*# sourceMappingURL=project-1.css.map */
