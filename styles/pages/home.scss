@@ -76,7 +76,42 @@ main {
     }
 }
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: $ipad) {
+    main {
+        section {
+            .ella-image {
+                img {
+                    height: 300px;
+                }
+            }
+
+            .intro {
+                p {
+                    font-size: 50px;
+                }
+
+                .hi-text {
+                    font-size: 50px;
+                }
+
+                .ella-name {
+                    font-size: 75px;
+                }
+
+                .btn-div {
+                    #my-work-btn {
+                        font-size: 24px;
+                        height: 50px;
+                        min-width: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: $desktop) {
     main {
         section{
             display: flex;
@@ -85,32 +120,12 @@ main {
 
             .ella-image {
                 img {
-                    height: 275px;
-                } 
+                    height: 350px;
+                }
             }
 
             .intro {
                 text-align: justify;
-
-                p {
-                    font-size: 40px;
-                }
-
-                .hi-text {
-                    font-size: 40px;
-                }
-
-                .ella-name {
-                    font-size: 60px;
-                }
-
-                .btn-div {
-                    #my-work-btn {
-                        font-size: 18px;
-                        height: 40px;
-                        min-width: 120px;
-                    }
-                }
             }
 
         }

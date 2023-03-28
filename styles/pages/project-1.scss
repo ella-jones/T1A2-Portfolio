@@ -49,34 +49,54 @@ main {
 
         #next-blog {
             height: 40px;
-                min-width: 120px;
-                background-color: $primary-color;
-                color: $third-color;
-                border: none;
-                outline: none;
-                border-radius: 3px;
-                font-size: 1.3rem;
-                font-family: 'Poppins', sans-serif; 
-            
-                &:hover {
-                    cursor: pointer;
-                    background-color: #f9815d;
-                }
+            min-width: 120px;
+            background-color: $primary-color;
+            color: $third-color;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif; 
+        
+            &:hover {
+                cursor: pointer;
+                background-color: #f9815d;
             }
+        }
         
     }
     
     
 }
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: $ipad) {
     main {
+        .heading {
+            font-size: 26px; 
+        }
+
         .description {
+            font-size: 18px;
+
             .blog-1-image {
-                width: 500px;
+                width: 450px;
+            }
+
+            #next-blog {
+                height: 50px;
+                min-width: 130px;
+                font-size: 1.5rem;
             }
         }
     }
 }
 
-// this breakpoint is not working
+@media screen and (min-width: $desktop) {
+    main {
+        .description {
+            .blog-1-image {
+                width: 650px;
+            }
+        }
+    }
+}

@@ -28,7 +28,15 @@ header .nav-items .nav-lines {
   width: 1.3px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
+  header .logo-title a img {
+    width: 180px;
+  }
+  header .nav-items a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1100px) {
   header {
     display: flex;
     align-items: flex-end;
@@ -61,11 +69,14 @@ footer p {
   font-weight: 300;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   footer .social-media {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+  footer .social-media a i {
+    font-size: 30px;
   }
 }
 body {
@@ -163,7 +174,6 @@ main .description form .btn-div #send:hover {
 }
 main .description .contact-info-section h3 {
   font-weight: 500;
-  margin-bottom: 0;
 }
 main .description .contact-info-section a {
   color: rgb(19, 19, 19);
@@ -182,13 +192,39 @@ main .description .contact-info-section .social-media-contact a i:hover {
   font-size: 50px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
+  main .heading {
+    font-size: 26px;
+  }
+  main .description h2 {
+    font-size: 26px;
+  }
+  main .description form .form-elements label {
+    font-size: 1.4rem;
+  }
+  main .description form .btn-div #send {
+    height: 50px;
+    min-width: 130px;
+    font-size: 1.5rem;
+  }
+  main .description form .btn-div #send:hover {
+    cursor: pointer;
+    background-color: #f8b895;
+  }
+  main .description .contact-info-section h3 {
+    font-size: 20px;
+  }
+  main .description .contact-info-section a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1100px) {
   main .description form .form-elements {
     flex-direction: row;
     justify-content: space-between;
   }
   main .description form .form-elements .form-input {
-    width: 70%;
+    width: 60%;
   }
   main .description .contact-stuff {
     display: flex;

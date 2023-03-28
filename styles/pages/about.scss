@@ -31,6 +31,7 @@ main {
         
         h3 {
             text-align: justify;
+            margin: 10px 0 0 0;
         }
 
         .who-am-i{
@@ -57,25 +58,45 @@ main {
 
         #resume {
             height: 40px;
-                min-width: 120px;
-                background-color: $primary-color;
-                color: $third-color;
-                border: none;
-                outline: none;
-                border-radius: 3px;
-                font-size: 1.3rem;
-                font-family: 'Poppins', sans-serif; 
-                
-
-
+            min-width: 120px;
+            background-color: $primary-color;
+            color: $third-color;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 1.3rem;
+            font-family: 'Poppins', sans-serif; 
 
                 &:hover {
                     cursor: pointer;
                     background-color: #f9815d;
                 }
-
         }
     }
-    
-    
 }
+
+@media screen and (min-width: $ipad) {
+    main {
+        .heading {
+            font-size: 26px; 
+        }
+
+        .description {
+            font-size: 18px;
+
+            h3 {
+                font-size: 24px;
+            }
+
+            .skills {
+                font-size: 75px;
+            }
+
+            #resume {
+                height: 50px;
+                min-width: 140px;
+                font-size: 1.4rem;
+            }
+        }   
+    }
+} 

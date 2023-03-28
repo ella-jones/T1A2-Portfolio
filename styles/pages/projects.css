@@ -28,7 +28,15 @@ header .nav-items .nav-lines {
   width: 1.3px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
+  header .logo-title a img {
+    width: 180px;
+  }
+  header .nav-items a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1100px) {
   header {
     display: flex;
     align-items: flex-end;
@@ -61,11 +69,14 @@ footer p {
   font-weight: 300;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
   footer .social-media {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+  }
+  footer .social-media a i {
+    font-size: 30px;
   }
 }
 body {
@@ -139,4 +150,16 @@ main .description .blogs .blog-title p {
   font-weight: 400;
   font-size: 15px;
   margin: 0 0 5px 0;
+}
+
+@media screen and (min-width: 500px) {
+  main .heading {
+    font-size: 26px;
+  }
+  main .description .blogs .blog-title h3 {
+    font-size: 24px;
+  }
+  main .description .blogs .blog-title p {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=projects.css.map */
