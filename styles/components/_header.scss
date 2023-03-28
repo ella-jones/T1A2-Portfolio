@@ -39,7 +39,7 @@ header {
     }
 }
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: $desktop) {
     header {
         display: flex;
         align-items: flex-end;

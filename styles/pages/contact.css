@@ -28,7 +28,7 @@ header .nav-items .nav-lines {
   width: 1.3px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   header {
     display: flex;
     align-items: flex-end;
@@ -61,7 +61,7 @@ footer p {
   font-weight: 300;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   footer .social-media {
     width: 50%;
     margin-left: auto;
@@ -125,6 +125,7 @@ main .description form .form-elements {
 main .description form .form-elements label {
   font-size: 1.2rem;
   color: white;
+  margin-right: 10px;
 }
 main .description form .form-elements .form-input {
   border: 1px solid #FCC9AD;
@@ -132,6 +133,7 @@ main .description form .form-elements .form-input {
   outline: none;
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
 }
 main .description form .form-elements .form-input:not(.form-textarea) {
   height: 25px;
@@ -159,9 +161,14 @@ main .description form .btn-div #send:hover {
   cursor: pointer;
   background-color: #f8b895;
 }
+main .description .contact-info-section h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
 main .description .contact-info-section a {
   color: rgb(19, 19, 19);
   cursor: pointer;
+  font-weight: 300;
 }
 main .description .contact-info-section .social-media-contact {
   display: flex;
@@ -175,7 +182,7 @@ main .description .contact-info-section .social-media-contact a i:hover {
   font-size: 50px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   main .description form .form-elements {
     flex-direction: row;
     justify-content: space-between;
@@ -187,6 +194,7 @@ main .description .contact-info-section .social-media-contact a i:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: flex-start;
   }
   main .description .contact-stuff .contact-info-section .social-media-contact {
     display: flex;

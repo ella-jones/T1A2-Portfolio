@@ -54,6 +54,7 @@ main {
                 label {
                     font-size: 1.2rem;
                     color: $third-color;
+                    margin-right: 10px;
                 }
 
                 .form-input {
@@ -61,7 +62,8 @@ main {
                     border-radius: 4px;
                     outline: none;
                     font-size: 1.2rem;
-                    font-family: 'Poppins', sans-serif;   
+                    font-family: 'Poppins', sans-serif; 
+                    font-weight: 300;  
                     
                     &:not(.form-textarea) {
                         height: 25px;
@@ -99,9 +101,15 @@ main {
         }
 
         .contact-info-section {
+            h3 {
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+            
             a {
                 color: $secondary-color;
                 cursor: pointer;
+                font-weight: 300;
             }
 
             .social-media-contact {
@@ -130,7 +138,7 @@ main {
     
 
 
-@media screen and (min-width: $medium) {
+@media screen and (min-width: $desktop) {
     main {
         .description {
             form {
@@ -148,6 +156,7 @@ main {
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-around;
+                align-items: flex-start;
 
                 .contact-info-section {
                     .social-media-contact {

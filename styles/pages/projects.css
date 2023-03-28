@@ -28,7 +28,7 @@ header .nav-items .nav-lines {
   width: 1.3px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   header {
     display: flex;
     align-items: flex-end;
@@ -61,7 +61,7 @@ footer p {
   font-weight: 300;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   footer .social-media {
     width: 50%;
     margin-left: auto;
