@@ -111,8 +111,8 @@ main .description {
   grid-column: 2/3;
   grid-row: 2/-1;
   box-shadow: 0 0 5px 1px #f9815d;
-  text-align: center;
   border-radius: 4px;
+  text-align: center;
 }
 main .description .blogs {
   display: flex;

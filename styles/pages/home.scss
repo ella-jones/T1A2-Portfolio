@@ -52,20 +52,7 @@ main {
             .btn-div {
 
                 #my-work-btn {
-                    font-family: 'Poppins', sans-serif;
-                    font-size: 16px;
-                    height: 35px;
-                    min-width: 115px;
-                    background-color: $primary-color;
-                    color: $third-color;
-                    border: none;
-                    outline: none;
-                    border-radius: 3px;
-
-                    &:hover {
-                        cursor: pointer;
-                        background-color: #fea473;
-                    }
+                    @include primary-button();
                 }
 
                 

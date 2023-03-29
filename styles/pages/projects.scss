@@ -9,24 +9,12 @@ main {
     margin-bottom: 50px;
 
     .heading {
-        background-color: $primary-color;
-        color: $third-color;
-        grid-column: 1 / -1;
-        grid-row: 1 / 3;
-        text-align: center;
-        border-radius: 3px;
-        font-family: 'Poppins', sans-serif;  
-        font-size: 20px;  
+        @include grid-header();  
     }
 
     .description {
-        background-color: #fbe0d3;
-        padding: 20px;
-        grid-column: 2 / 3;
-        grid-row: 2 / -1;
-        box-shadow: 0 0 5px 1px #f9815d;
+        @include grid-description(); 
         text-align: center;
-        border-radius: 4px;
 
         .blogs {
 
