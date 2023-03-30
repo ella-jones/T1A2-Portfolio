@@ -5,14 +5,21 @@
 header {
     @include background-stuff();
 
+    // The below code is the styling for my logo image.
     .logo-title {
         a {
             img {
                 width: 150px;
+
+                // When you hover over the logo, it expands in size.
+                &:hover {
+                    width: 160px;
+                }
             }
         }
     }
 
+    // The below code is the styling for my navigation bar. This styling is consistent on all pages within the website.
     .nav-items {
         width: 100%;
         display: flex;
@@ -26,11 +33,13 @@ header {
             text-decoration: none;
             color: $primary-color;
 
+            // When you hover over items in the navigation bar, they change colour. This is to communicate to the user that it is a link.
             &:hover {
                 color: #fea473;
             }
         }
 
+        // I used lines to seperate my navigation bar items and add to the overall aesthetic of the site.
         .nav-lines {
             background-color: $primary-color;
             height: 25px;
@@ -39,16 +48,22 @@ header {
     }
 }
 
+// When the user's screen is expanded to the size of an ipad, the logo image expands to fill up more of the screen.
 @media screen and (min-width: $ipad) {
     header {
         .logo-title {
             a {
                 img {
                     width: 180px;
+
+                    &:hover {
+                        width: 190px;
+                    }
                 }
             }
         }
 
+        // The navigation bar expands in ipad viewing to fill more of the screen.
         .nav-items {
             a {
                 font-size: 24px;
@@ -57,6 +72,7 @@ header {
     }
 }
 
+// In desktop view, the logo moves to the right side of the screen, with the navigation bar on the right. This fits the layout of a desktop much cleaner.
 @media screen and (min-width: $desktop) {
     header {
         display: flex;

@@ -6,6 +6,9 @@ header {
 header .logo-title a img {
   width: 150px;
 }
+header .logo-title a img:hover {
+  width: 160px;
+}
 header .nav-items {
   width: 100%;
   display: flex;
@@ -31,6 +34,9 @@ header .nav-items .nav-lines {
 @media screen and (min-width: 500px) {
   header .logo-title a img {
     width: 180px;
+  }
+  header .logo-title a img:hover {
+    width: 190px;
   }
   header .nav-items a {
     font-size: 24px;
@@ -115,6 +121,8 @@ main .description {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
+
+/* The below code is the styling for the blog component on the blog project pages. */
 main .description .blog-1-image {
   width: 250px;
   border-radius: 5px;
@@ -145,6 +153,7 @@ main .description #next-blog:hover {
   background-color: #f9815d;
 }
 
+/* All components on this page are responsive to different screen sizes. */
 @media screen and (min-width: 500px) {
   main .heading {
     font-size: 26px;

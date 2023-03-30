@@ -1,3 +1,4 @@
+/* styling for the header components can be found in the _header.scss file. */
 header {
   background-color: #FCC9AD;
   padding: 16px;
@@ -5,6 +6,9 @@ header {
 }
 header .logo-title a img {
   width: 150px;
+}
+header .logo-title a img:hover {
+  width: 160px;
 }
 header .nav-items {
   width: 100%;
@@ -31,6 +35,9 @@ header .nav-items .nav-lines {
 @media screen and (min-width: 500px) {
   header .logo-title a img {
     width: 180px;
+  }
+  header .logo-title a img:hover {
+    width: 190px;
   }
   header .nav-items a {
     font-size: 24px;
@@ -94,11 +101,18 @@ main section {
   flex-direction: column;
   align-items: center;
 }
+
+/* The below code is the styling for the image/link on my home page. */
+/* I have given this component a circular border, using border-radius and  */
+/* a background of the primary colour to keep consistent design. */
 main section .ella-image img {
   border: 10px solid #FB6131;
   height: 200px;
   border-radius: 50%;
 }
+
+/* Below is the styling for the introduction text component on the home page. */
+/* I have used the same font across the site to keep a consistent design. */
 main section .intro {
   text-align: center;
 }
@@ -113,12 +127,16 @@ main section .intro .hi-text {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+/* The text "ella." is larger and a different colour to make it stand out. */
 main section .intro .ella-name {
   font-size: 50px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #FB6131;
 }
+
+/* When you hover over "ella" it goes a different colour to communicate to the user that it is a link. */
 main section .intro .ella-name:hover {
   color: #fea473;
 }
@@ -144,6 +162,9 @@ main section .intro .btn-div #my-work-btn:hover {
   background-color: #f9815d;
 }
 
+/* End of introduction text component styling. */
+
+/* the below media screen breakpoint creates a responsive design for both ipads and desktops, changing the components styling to fit the screen size. */
 @media screen and (min-width: 500px) {
   main section .ella-image img {
     height: 300px;

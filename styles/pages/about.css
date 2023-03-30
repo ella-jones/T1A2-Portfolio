@@ -6,6 +6,9 @@ header {
 header .logo-title a img {
   width: 150px;
 }
+header .logo-title a img:hover {
+  width: 160px;
+}
 header .nav-items {
   width: 100%;
   display: flex;
@@ -31,6 +34,9 @@ header .nav-items .nav-lines {
 @media screen and (min-width: 500px) {
   header .logo-title a img {
     width: 180px;
+  }
+  header .logo-title a img:hover {
+    width: 190px;
   }
   header .nav-items a {
     font-size: 24px;
@@ -89,6 +95,7 @@ body {
   justify-content: space-between;
 }
 
+/* I used CSS grid to style the pages in the site, not including the home page. */
 main {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -105,6 +112,8 @@ main .heading {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
+
+/* The below code is the styling for the text component on the home page. */
 main .description {
   background-color: #fbe0d3;
   padding: 20px;
@@ -116,13 +125,15 @@ main .description {
   text-align: center;
 }
 main .description h3 {
-  text-align: justify;
+  text-align: left;
   margin: 10px 0 0 0;
 }
 main .description .who-am-i {
   margin-bottom: 40px;
   text-align: left;
 }
+
+/* The below code is the styling for the skills component on the about page.  */
 main .description .skills {
   display: flex;
   flex-wrap: wrap;
@@ -132,9 +143,14 @@ main .description .skills {
   padding: 20px;
   font-size: 60px;
 }
+
+/* The skills animate to increase in size when the user hovers their mouse over each skill icon. */
 main .description .skills i:hover {
   font-size: 70px;
+  transition-duration: 0.5s;
 }
+
+/* The below code is the styling for the resume button graphical component on the about page.  */
 main .description #resume {
   height: 40px;
   min-width: 120px;
@@ -146,11 +162,14 @@ main .description #resume {
   font-size: 1.3rem;
   font-family: "Poppins", sans-serif;
 }
+
+/* When you hover over the button, it changed colour slightly, and turns the cursor to a pointer to show the user that it is a link/button. */
 main .description #resume:hover {
   cursor: pointer;
   background-color: #f9815d;
 }
 
+/* I used breakpoints to modify the components for different screen sizes to create a responsive design. */
 @media screen and (min-width: 500px) {
   main .heading {
     font-size: 26px;
@@ -163,6 +182,10 @@ main .description #resume:hover {
   }
   main .description .skills {
     font-size: 75px;
+  }
+  main .description .skills i:hover {
+    font-size: 85px;
+    transition-duration: 0.5s;
   }
   main .description #resume {
     height: 50px;

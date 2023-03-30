@@ -6,6 +6,9 @@ header {
 header .logo-title a img {
   width: 150px;
 }
+header .logo-title a img:hover {
+  width: 160px;
+}
 header .nav-items {
   width: 100%;
   display: flex;
@@ -31,6 +34,9 @@ header .nav-items .nav-lines {
 @media screen and (min-width: 500px) {
   header .logo-title a img {
     width: 180px;
+  }
+  header .logo-title a img:hover {
+    width: 190px;
   }
   header .nav-items a {
     font-size: 24px;
@@ -122,6 +128,8 @@ main .description .contact-stuff {
 main .description h2 {
   color: rgb(19, 19, 19);
 }
+
+/* Below is the styling code for the contact form graphical component. */
 main .description form {
   background-color: #FB6131;
   padding: 16px;
@@ -168,10 +176,15 @@ main .description form .btn-div #send {
   border-radius: 3px;
   font-size: 1.3rem;
 }
+
+/* When you hover over the "send" button, the user's cursor transitions to pointer and the colour changes to indicate it is a clickable link/button. */
 main .description form .btn-div #send:hover {
   cursor: pointer;
   background-color: #f8b895;
 }
+/* End of contact form styling */
+
+/* The below css code is the styling for the contact information text component on the contact page. */
 main .description .contact-info-section h3 {
   font-weight: 500;
 }
@@ -191,7 +204,9 @@ main .description .contact-info-section .social-media-contact a i {
 main .description .contact-info-section .social-media-contact a i:hover {
   font-size: 50px;
 }
+/* End of contact information component styling. */
 
+/* The components on this page are responsive to different screen sizes (mobile, ipad and desktop) */
 @media screen and (min-width: 500px) {
   main .heading {
     font-size: 26px;

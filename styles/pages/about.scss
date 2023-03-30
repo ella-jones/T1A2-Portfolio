@@ -19,7 +19,7 @@ main {
         text-align: center;
         
         h3 {
-            text-align: justify;
+            text-align: left;
             margin: 10px 0 0 0;
         }
 
@@ -41,6 +41,7 @@ main {
             i{
                 &:hover {
                     font-size: 70px;
+                    transition-duration: 0.5s;
                 }
             }
         }
@@ -66,6 +67,13 @@ main {
 
             .skills {
                 font-size: 75px;
+
+                i{
+                    &:hover {
+                        font-size: 85px;
+                        transition-duration: 0.5s;
+                    }
+                }
             }
 
             #resume {

@@ -6,14 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ella Jones Web Development</title>
-    <link rel="stylesheet" href="./styles/index.css" >
-    <link rel="stylesheet" href="./styles/pages/home.css" >
+    <link rel="stylesheet" href="./styles/pages/home.css">
 
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,11 +24,14 @@
 
 <body>
     <header>
+        <!-- the below div contains the logo component (graphical) for my website. The styling for this can be found in _header.scss -->
         <div class="logo-title">
             <a href="./index.html">
                 <img src="./images/ella_logo.png" alt="Logo">
             </a>
         </div>
+
+        <!-- The below code is the html for my navigation bar component (text). The styling for this component can be found in _header.scss  -->
         <nav class="nav-items">
             <a href="./pages/about.html">ABOUT</a>
             <span class="nav-lines"></span>
@@ -37,33 +39,41 @@
             <span class="nav-lines"></span>
             <a href="./pages/contact.html">CONTACT</a>
         </nav>
+        <!-- This is the end of the code for the navigation bar component. -->
+    
     </header>
     <main>
         <section>
+            <!-- The following text is for the graphical component of the image/link on the home page. The styling for this component can be found in the home.css file.  -->
             <a href="./pages/contact.html">
                 <figure class="ella-image">
                     <img src="./images/ella-headshot-square-400.jpg" alt="image of Ella Jones">
                 </figure>
             </a>
+            <!-- End of image code -->
 
+            <!-- The following code is the html for the text component of the introduction to who I am. The styling for this component can be found in the home.css file. -->
             <article class="intro">
                 <span class="hi-text">Hi, I'm </span>
+                <!-- the "ella." text links to the about page. -->
                 <a href="./pages/about.html">
-                    <span class="ella-name"> ella. </span> 
+                    <span class="ella-name"> ella. </span>
                 </a>
                 <p>A full-stack </p>
                 <p>web-developer </p>
                 <p>in training.</p>
-                
+
                 <a href="./pages/projects.html">
                     <div class="btn-div">
                         <button id="my-work-btn">My Work.</button>
                     </div>
                 </a>
+            <!-- End of introduction component code. -->
             </article>
         </section>
     </main>
     <footer>
+        <!-- The below code is the html for the social media bar graphical component in the footer of my webpage. This is consistent across the whole site and the syling for this component can be found in the _footer.scss file. -->
         <div class="social-media">
             <a href="https://github.com/ella-jones" target="_blank">
                 <i class="fa-brands fa-github"></i></a>
@@ -72,6 +82,9 @@
             <a href="https://www.instagram.com/ella.jones__/" target="_blank">
                 <i class="fa-brands fa-instagram"></i></a>
         </div>
+        <!-- This is the end of the code for the social media bar component. -->
+
+        <!-- The below text component, which is consistent across the whole site demonstrates to the user the copyright of the website.-->
         <p>©copyright Ella Jones 2023</p>
     </footer>
 </body>

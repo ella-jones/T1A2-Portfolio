@@ -6,6 +6,9 @@ header {
 header .logo-title a img {
   width: 150px;
 }
+header .logo-title a img:hover {
+  width: 160px;
+}
 header .nav-items {
   width: 100%;
   display: flex;
@@ -31,6 +34,9 @@ header .nav-items .nav-lines {
 @media screen and (min-width: 500px) {
   header .logo-title a img {
     width: 180px;
+  }
+  header .logo-title a img:hover {
+    width: 190px;
   }
   header .nav-items a {
     font-size: 24px;
@@ -119,6 +125,8 @@ main .description .blogs {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/* Below is the styling for the graphical blog components on the projects page. */
 main .description .blogs a {
   text-decoration: none;
 }
@@ -151,7 +159,10 @@ main .description .blogs .blog-title p {
   font-size: 15px;
   margin: 0 0 5px 0;
 }
+/* end of styling code for blog components. */
 
+
+/* The components on this page are responsive and modify to fit different screen sizes appropriately. */
 @media screen and (min-width: 500px) {
   main .heading {
     font-size: 26px;

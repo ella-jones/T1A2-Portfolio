@@ -5,6 +5,7 @@
 footer {
     @include background-stuff();
  
+    // the below code is the styling for the social media bar component in the footer of my website and is consistend across all pages on the site.
     .social-media {
      display: flex;
      justify-content: space-around;
@@ -26,6 +27,7 @@ footer {
     }
  }
  
+//  When the screensize is enlarged to ipad dimentions, the social media icons increase in size to fit the page better. 
  @media screen and (min-width: $ipad) {
      footer {
          .social-media {
